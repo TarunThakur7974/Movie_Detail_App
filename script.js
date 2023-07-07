@@ -55,7 +55,7 @@ let forSingleData = async (name = "Avenger", page = 1, oneOrMore = "For_Multiple
             dataDiv.append(divOne);
             dataDiv.append(divTwo);
             form.reset();
-            inputName.focus();
+            
         } catch (error) {
            text = 'Please inter a valid name'
              alertFunc(text);
@@ -83,7 +83,7 @@ let forSingleData = async (name = "Avenger", page = 1, oneOrMore = "For_Multiple
                 dataDiv.append(div);
             })
             form.reset();
-            inputName.focus();
+           
 
         }
         catch {
