@@ -58,6 +58,7 @@ let forSingleData = async (name = "Avenger", page = 1, oneOrMore = "For_Multiple
             inputName.focus();
         } catch (error) {
            text = 'Please inter a valid name'
+             alertFunc(text);
             form.reset();
             inputName.focus();
         }
