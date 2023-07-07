@@ -57,7 +57,7 @@ let forSingleData = async (name = "Avenger", page = 1, oneOrMore = "For_Multiple
             form.reset();
             inputName.focus();
         } catch (error) {
-            alert('Please enter a valid name');
+           text = 'Please inter a valid name'
             form.reset();
             inputName.focus();
         }
@@ -86,7 +86,8 @@ let forSingleData = async (name = "Avenger", page = 1, oneOrMore = "For_Multiple
 
         }
         catch {
-            alert('please enter a valid name')
+            text = 'Please inter a valid name'
+        alertFunc(text);
             form.reset();
         }
     }
