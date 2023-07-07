@@ -117,6 +117,7 @@ ul.addEventListener('click', (e) => {
     });
     if (e.target.classList.contains('listitems')) {
         movieName = e.target.textContent
+       oneOrMore = 'For_Multiple'
         forSingleData(movieName, page, oneOrMore);
     }
 })
