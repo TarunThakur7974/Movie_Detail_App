@@ -40,7 +40,7 @@ let forSingleData = async (name = "Avenger", page = 1, oneOrMore = "For_Multiple
                 form.reset();
                 forSingleData();
             }
-
+else{
             let divOne = document.createElement('div');
             divOne.className = "divOne";
             divOne.innerHTML = `    
@@ -61,7 +61,7 @@ let forSingleData = async (name = "Avenger", page = 1, oneOrMore = "For_Multiple
             dataDiv.append(divOne);
             dataDiv.append(divTwo);
             form.reset();
-            
+}
         } catch (error) {
            text = 'Please inter a valid name'
              alertFunc(text);
