@@ -34,7 +34,7 @@ let forSingleData = async (name = "Avenger", page = 1, oneOrMore = "For_Multiple
             let res = await fetch(url);
             let data = await res.json();
             dataDiv.innerHTML = '';
-            if(data.Response === 'false'){
+            if(data.Response === 'False'){
                 text = 'Please inter a valid name'
                 alertFunc(text)
                 form.reset();
