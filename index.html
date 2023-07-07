@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie details-app</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contOne">
+    </div>
+
+    <nav>
+        <img src="icon.png" width="70px" alt="icon">
+        <ul>
+            <li class="listitems">Comedy</li>
+            <li class="listitems">Action</li>
+            <li class="listitems">Romance</li>
+            <li class="listitems">Adventure</li>
+            <li class="listitems">Sports</li>
+            <li class="listitems">Horror</li>
+        </ul>
+    </nav>
+    <form>
+        <div class="inputs">
+            <input type="search" id="forSingle" required>
+            <button type="submit">Search
+            </button>
+        </div>
+        <div class="radios">
+            <div class="ra">
+                <input type="radio" id="radioOne" name="age" value="For_Single" required>
+                <label for="radioOne">For Single</label>
+            </div>
+            <div class="ra"> <input checked type="radio" id="radioTwo" name="age" value="For_Multiple" required>
+                <label for="radioTwo">For Multiple</label>
+            </div>
+        </div>
+    </form>
+
+    <div class="dataDiv">
+
+    </div>
+    <div class="changepage">
+        <button id="btnOne" class="btn">Previous</button>
+        <b id="pageNum"></b>
+        <button id="btnTwo" class="btn">Next </button>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
