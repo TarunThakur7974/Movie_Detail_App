@@ -34,6 +34,12 @@ let forSingleData = async (name = "Avenger", page = 1, oneOrMore = "For_Multiple
             let res = await fetch(url);
             let data = await res.json();
             dataDiv.innerHTML = '';
+            if(data.Response === 'false'){
+                text = 'Please inter a valid name'
+                alertFunc(text)
+                form.reset();
+                forSingleData();
+            }
 
             let divOne = document.createElement('div');
             divOne.className = "divOne";
