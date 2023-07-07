@@ -89,6 +89,7 @@ let forSingleData = async (name = "Avenger", page = 1, oneOrMore = "For_Multiple
             text = 'Please inter a valid name'
         alertFunc(text);
             form.reset();
+            forSingleData();
         }
     }
 
@@ -144,6 +145,7 @@ btnOne.addEventListener('click', () => {
     else {
         text = 'Your already on First Page'
         alertFunc(text);
+        forSingleData();
     }
 
 })
