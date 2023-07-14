@@ -29,7 +29,7 @@ let forSingleData = async (name = "Avenger", page = 1, oneOrMore = "For_Multiple
 
     if (oneOrMore === 'For_Single') {
         changepage.style.display = "none"
-        url = `https://www.omdbapi.com/?apikey=b183b477&t=${name}`;
+        url = `https://www.omdbapi.com/?apikey=e6839135&t=${name}`;
         try {
             let res = await fetch(url);
             let data = await res.json();
@@ -73,7 +73,7 @@ else{
 
     else {
         changepage.style.display = "block"
-        url = `https://www.omdbapi.com/?apikey=b183b477&s=${name}&page=${page}`;
+        url = `https://www.omdbapi.com/?apikey=e6839135&s=${name}&page=${page}`;
         try {
             let res = await fetch(url);
             let data = await res.json();
